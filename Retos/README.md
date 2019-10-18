@@ -47,4 +47,4 @@ Deberás poner hoja en blanco, elegir una ubicación para guardarlo y empezar a 
 ![](5.png)
 
 
-#### ⭐️ ¡Y listo! ¡Qué te diviertas! ⭐️
+### ¡Y listo! ¡Qué te diviertas! ⭐️
