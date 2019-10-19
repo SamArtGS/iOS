@@ -40,7 +40,7 @@ Temas importantes:
 -  Introducción a proyecto Catalyst (de iPad a Mac)
 -  ¿Cómo publicar tu app en la App Store y recomendaciones?
 
-![](Scr1.png)
+![](scr1.png)
 
 
 
