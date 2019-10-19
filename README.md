@@ -31,6 +31,8 @@ Temas importantes:
 -  Mapas
 -  Firebase
 -  WebKit
+-  CocoaPods
+-  HTTP Requests / Manejo de API's (Google Maps)
 -  CoreData
 -  CoreML
 -  Introducción a ARKit
