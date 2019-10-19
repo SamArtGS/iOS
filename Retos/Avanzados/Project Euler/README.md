@@ -9,8 +9,10 @@ En internet puedes encontrar muchas cosas, desde videos de Yuya hasta cositas ma
 #### Summation of primes
 
 La suma de los primos menores que 10:
-	
-- <img src="https://latex.codecogs.com/gif.latex? f(10) = 2 + 3 + 5 + 7 = 17 " /> 
+
+```math
+   f(10) = 2 + 3 + 5 + 7 = 17
+```
 	
 Encuentre la suma de todos los primos menores que 2 millones. ¿Suena mucho no?
 
