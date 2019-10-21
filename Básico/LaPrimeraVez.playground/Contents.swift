@@ -1,32 +1,31 @@
+
 import Cocoa
-let levels: [[Int]] = [
-    [04, 62, 98, 27, 23, 09, 70, 98, 73, 93, 38, 53, 60, 04, 23],
-      [63, 66, 04, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31],
-        [91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48],
-          [70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57],
-            [53, 71, 44, 65, 25, 43, 91, 52, 97, 51, 14],
-              [41, 48, 72, 33, 47, 32, 37, 16, 94, 29],
-                [41, 41, 26, 56, 83, 40, 80, 70, 33],
-                  [99, 65, 04, 28, 06, 16, 70, 92],
-                    [88, 02, 77, 73, 07, 63, 67],
-                      [19, 01, 23, 75, 03, 34],
-                        [20, 04, 82, 47, 65],
-                          [18, 35, 87, 10],
-                            [17, 47, 82],
-                              [95, 64],
-                                [75]]
 
-func p18() -> Int {
-    var lastLevelScores = levels[0]
-    for level in levels[1..<levels.count] {
-        var levelScores: [Int] = []
-        for i in 0..<level.count{
-            let betterPathScore = max(lastLevelScores[i], lastLevelScores[i + 1])
-            levelScores.append(level[i] + betterPathScore)
-        }
-        lastLevelScores = levelScores
-    }
 
-    return lastLevelScores[0]
+var numbers = Dictionary<Int,Bool>()
+
+for i in  2...200 { //Guardamos en un arreglo de tamaño 2,000,000 banderas
+    numbers[i] = true
 }
-p18()
+var max =  Int (sqrt(Double(numbers.count)))
+
+numbers.keys.sorted().min()
+
+for i in numbers.keys.sorted().min()!...max {
+    if numbers[i] == true {
+        var j = i * i
+        while(j <= numbers.count + 1) {
+            numbers[j] = false
+            j += i
+        }
+    }
+}
+
+var sum:Int = 0
+for i in numbers.keys {
+    if(numbers[i] == true) {
+       sum += i
+      }
+}
+
+print(sum)

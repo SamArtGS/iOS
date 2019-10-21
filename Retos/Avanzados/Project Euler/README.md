@@ -19,12 +19,12 @@ La solución podemos verla como la siguiente:
 ```swift
 var numbers = Dictionary<Int,Bool>()
 
-for i in  2...2000000 { //Guardamos en un arreglo de tamaño 2,000,000 banderas
+for i in  2...20000 { //Guardamos en un arreglo de tamaño 2,000,000 banderas, pero como no quiero ver mi computadora morir, lo dejamos en 20000
     numbers[i] = true
 }
 var max =  Int ( sqrt(Double(numbers.count)) ) //Obtenemos la raíz de la cantidad de números **
 
-for i in numbers.keys.sort().minElement()!...max {
+for i in numbers.keys.sorted().min()!...max {
     if numbers[i] == true {
         var j = i * i
         while(j <= numbers.count + 1) {
@@ -46,7 +46,7 @@ print(sum)
 
 ```
 
-** Existe un lema matemático que dice que para encontrar 
+Ténganse en cuenta que la complejidad computacional de éste problema es alta (Tiempo que dura a mayor cantidad de números). Así que si logran bajarla les regalo un Totti. 🥠
 
 #### La suma de los caminos 🏔
 
