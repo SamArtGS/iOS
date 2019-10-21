@@ -48,6 +48,8 @@ print(sum)
 
 Ténganse en cuenta que la complejidad computacional de éste problema es alta (Tiempo que dura a mayor cantidad de números). Así que si logran bajarla les regalo un Totti. 🥠
 
+Resultado del algoritmo: **21171191**
+
 #### La suma de los caminos 🏔
 
 Iniciando en la punta del triángulo y moviéndose hacia el número adyacente más grande, la suma total de punta a base de éstos números es 23.
@@ -96,7 +98,7 @@ func p18() -> Int {
 p18()
 
 ```
-El resultado del algoritmo: **1074**
+Resultado del algoritmo: **1074**
 
 #### La suma de los caminos 🏔
 
