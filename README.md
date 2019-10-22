@@ -1,4 +1,12 @@
-# Programación de Apps en iOS con Swift
+
+
+
+<p>
+  <img src="proteco.png" align = "right"  width="110" height="100"/>
+</p>
+
+# Programación de Apps en iOS con Swift 
+
 
 ## iOS, iPadOS y macOS
 
