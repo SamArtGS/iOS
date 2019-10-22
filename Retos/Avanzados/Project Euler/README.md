@@ -150,7 +150,7 @@ Resultado del algoritmo: **303963552391**
 
 La serie de Fibonacci es: 1,1,2,3,5,8,13,21... en el cuál un número se obtiene sumando 2 anteriores, ahora, encuentra la suma de los números pares de la serie de Fibonacci menores a 4,000,000.
 
-**3 Primos circulares ⚽️** 
+**3) Primos circulares ⚽️** 
 
 El número 197 es llamado un primo circular porque si "roto" sus dígitos (192,971,719) todos ellos son primos igual. De los primos menores a 100 éstos son circulares:
 

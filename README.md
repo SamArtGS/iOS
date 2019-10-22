@@ -2,7 +2,7 @@
 
 
 <p>
-  <img src="proteco.png" align = "right"  width="110" height="100"/>
+  <img src="proteco.png" align = "right"  width="110" height="90"/>
 </p>
 
 # Programación de Apps en iOS con Swift 
@@ -34,19 +34,19 @@ Temas importantes:
 -  Storyboards
 -  Protocolos
 -  Delegados
--  UIKit (TableView,CollectionView, etc)
+-  UIKit (TableView,CollectionView, etc.)
 -  AppDelegate
--  Mapas
+-  MapKit (Mapas)
 -  Firebase
 -  WebKit
 -  CocoaPods
 -  HTTP Requests / Manejo de API's (Google Maps)
--  CoreData
--  CoreML
--  Introducción a ARKit
--  Introducción a MetalKit
--  Introducción a SpriteKit
--  Introducción a SwiftUI
+-  CoreData (Persistencia de datos)
+-  CoreML (Machine Learning)
+-  Introducción a ARKit (Realidad Aumentada)
+-  Introducción a MetalKit (Contenido gráfico)
+-  Introducción a SpriteKit (Videojuegos)
+-  Introducción a SwiftUI (Framework)
 -  Introducción a proyecto Catalyst (de iPad a Mac)
 -  ¿Cómo publicar tu app en la App Store y recomendaciones?
 
