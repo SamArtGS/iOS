@@ -6,7 +6,7 @@ En internet puedes encontrar muchas cosas, desde videos de Yuya hasta cositas ma
 
 ###  Los retos ejemplo:
 
-#### Suma de primos 🧸
+#### Suma de primos 🤠
 
 La suma de los primos menores que 10:
 	
@@ -98,9 +98,65 @@ func p18() -> Int {
 p18()
 
 ```
+
 Resultado del algoritmo: **1074**
 
-#### La suma de los caminos 🏔
+#### Fracciones irreducibles ✂️
+Considerando la fracción n/d, donde n y d son enteros positivos, si n<d y el máximo común divisor entre ambos es 1 a esto se llama una fracción irrreducible. Si tenemos una lista de todas las fracciones irreducibles positivas menores a un número k el cuál d ≤ k, por ejemplo k=8.
 
+d ≤ 8
+
+Fracciones irreducibles posibles:
+
+1/8, 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 3/8, 2/5, 3/7, 1/2, 4/7, 3/5, 5/8, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 7/8
+
+Son en total 21 fracciones irreducibles posibles con d menor o iguales a 8.
+
+¿Cuántas fracciones irreducibles será posibles si el número k es 1,000,000 (d ≤ 1,000,000)?
+
+```swift
+var limite:Int  = 1_000_000
+
+var phi:[Int] = Array(0...limite)
+
+var resultado:Int = 0
+
+for i in 2...limite{
+    if(phi[i] == i){
+        for j in i...limite where j % i == 0{
+            phi[j] = phi[j]/i*(i-1)
+        }
+    }
+    resultado += phi[i]
+}
+print(resultado)
+
+```
+
+Corriendo el algoritmo tendremos que iterar dentro de las fracciones y comprobar que su máximo común divisor es 1 y luego ir contando pero esto nos eleva la complejidad computacional demasiado. Así que, ¿puede haber una mejor manera de resolverlo?
+
+Resultado del algoritmo: **303963552391**
+
+### AHORA QUE YA SE MOSTRARON LOS EJEMPLOS 👀
 
 ###  Retos a resolver:
+
+
+**1) Yo te he visto antes 👁** 
+
+¿Pueden ver que el número 125874 multiplicado por 2 es 251748? Están compuestos por los mismos dígitos (1,2,5,8,7,4) pero en diferente orden. Ahora encuentra el menor número positivo tal que si lo multiplicamos por 2, luego por 3, luego por 4, luego por 5 y  por último 6, cada operación resultará en el mismo número n pero con sus dígitos en diferente orden.
+
+**2) El clásico 🥁** 
+
+La serie de Fibonacci es: 1,1,2,3,5,8,13,21... en el cuál un número se obtiene sumando 2 anteriores, ahora, encuentra la suma de los números pares de la serie de Fibonacci menores a 4,000,000.
+
+**3 Primos circulares ⚽️** 
+
+El número 197 es llamado un primo circular porque si "roto" sus dígitos (192,971,719) todos ellos son primos igual. De los primos menores a 100 éstos son circulares:
+
+##### 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79 y 97.
+
+¿Cuántos primos circulares habrá hasta 1,000,000?
+
+
+### Buena suerte y que la fuerza te acompañe ⚔️
