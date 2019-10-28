@@ -50,17 +50,24 @@ Antes que nada para no caer en la maldición, haremos un “Hola mundo!”
 
 ```swift
  print(“Hola mundo!”)
+ let x:Int = 5
+ var y:Int = 6
 ```
 
 Para poder declarar variables tenemos 2 elementos clave, que es el modificador de variable. 
-	* let: Nos permite generar constes que no podrán ser modificadas luego en nuestro código
-	* var: Nos permite generar variables que se prodrán modificar luego en nuestro código
+
+**let:** Nos permite generar constes que no podrán ser modificadas luego en nuestro código.
+	
+**var:** Nos permite generar variables que se prodrán modificar luego en nuestro código.
  
 **¿Por qué existe eso?**
-Una de las particularidades del lenguaje es que 
+Una de las particularidades del lenguaje es que la protección de los datos almacenados en la variables 
 
 
 
 ```swift
+	
+	
+
 
 ```
