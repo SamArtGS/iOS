@@ -63,6 +63,7 @@ Desde la primera versión de iOS, utiliza algo llamado XNU (X is Not Unix). Es l
   <img src="images/scr6.png" align = "right"  width="40" />
 
 </p>
+
 ## El sistema operativo macOS
 
 De la misma manera otro sistema operativo que estaremos usando en el curso será macOS, recientemente renombrado de OS X. Actualmente nos encontramos en macOS 10.15 que lleva por sobrenombre Catalina, que hace referencia a la isla californiana Catalina.
@@ -158,6 +159,7 @@ MacBook-Pro-de-Sam:~$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubuserconte
   <img src="images/scr8.png" align = "right"  width="40" />
 
 </p>
+
 ## App Store (iOS y iPadOS) y Mac App Store
 
 Sonará redundante pero sí, las tiendas de aplicaciones para dispositivos móviles tales como iPad, iPhone, iPod, Apple Watch están separadas de las tiendas para Mac y no tan notorio pero es diferente desarrollar para las 4 categorías:
