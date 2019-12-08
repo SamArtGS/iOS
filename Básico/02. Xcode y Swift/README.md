@@ -74,3 +74,5 @@ Utiliza Python como principal lenguaje pero Python carga consigo un pecado: Es u
 Aquí entra Swift, que fue elegido como el reemplazo que ésta biblioteca tendrá para potencializar el rendimiento del desarrollo de modelos predictivos. Así que Swift al ser compilado, de una sintaxis amable y con un rendimiento impresionante se ha ganado ese puesto. Podemos decir que Swift no solamente sirve para hacer aplicaciones móviles, puede ser llevado a muchas otras cosas y muy interesantes.
 
 ### ¿Entonces, qué opinas de Swift?
+
+Próximamente: Curso de TensorFlow ❤️
