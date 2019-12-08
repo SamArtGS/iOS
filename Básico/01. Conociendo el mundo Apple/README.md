@@ -2,7 +2,7 @@
   <img src="images/scr7.png" align = "right"  width="40" />
 </p>
 
-# Introducción al desarrollo en iOS
+# Conociendo el mundo Apple
 No es raro ver teléfonos o productos de la manzana mordida en las calles, empresas y en casas. Por muchos años se ha mantenido como una de las principales competencias de Google, Microsoft, Huawei y Samsung.
 
 Apple se focaliza más en la experiencia de usuario, tanto en hardware como en software, por lo que el nivel de exigencia hacia los desarrolladores en iOS es más que en Android, para mantener los estándares que espera Apple para sus clientes, garantizando así aplicaciones y productos de una gran calidad. A la par, la rentabilidad de desarrollar apps es mayor en el mundo Apple que en el mundo Google.
@@ -129,8 +129,16 @@ Seguramente recuerdas de Windows que CONTROL + C es copiar, CONTROL + V es pegar
 Por lo primero que debe saltar a tu vista es que en el teclado Mac hay una tecla que dice cmd, otra alt, otra con una flecha para arriba (Shift), otra ctrl y otra por ahí que dice fn. Bueno, el catálogo de atajos vienen con la siguiente metodología:
 
 - **cmd ⌘** + algo indica que ejecutarás una acción, ejemplo: cmd + c = copiar
-- **alt** + algo indica que insertarás el caracter a la derecha del la tecla que vayas a presionar, ejemplo: cmd + 2 = @
+- **alt** + algo indica que insertarás el caracter a la derecha del la tecla que vayas a presionar, ejemplo: alt + 2 = @
 - **shift** + algo indica que podrás mayúsculas o si presionas un número pondrá el símbolo en la parte superior de la tecla, ejemplo: shift + a = A, shift + 5 = %
+
+Uno muy útil es el de capturas de pantalla:
+
+- cmd + shift + 3 = captura pantalla completa, aparece la imagen en escritorio
+- cmd + shift + 4 = captura de pantalla recortada, aparece en escritorio el archivo (si aprietas la barra espaciadora capturas una ventana completa sin necesidad de recortar a pulso)
+
+[Checa todas las combinaciones de teclas](https://support.apple.com/es-mx/HT201236)
+
 
 ### Kernel - Basado en Unix
 XNU es un núcleo o kernel desarrollado originalmente por NeXT e implementado por Apple Inc. en 1996 en su sistema operativo macOS. XNU es el acrónimo de "X is Not Unix". Fue liberado como software libre y de código abierto como parte del sistema operativo Darwin. Lo que quiere decir que si eres usuario de alguna distribución de GNU/Linux te sentirás familiar con el sistema, además que la terminal para términos prácticos y profesionales te permitirá tener una transparencia con Linux. Es como tener ambos mundos: GNU/Linux y software privativo desarrollado para Mac (dmg).
@@ -190,6 +198,7 @@ Y los juegos del momento son:
   <img src="images/top4.PNG" align = "left"  width="300"/>
   <img src="images/top3.PNG" align = "center"  width="300"/>
 </p>
+
 #### iPad
 
 Como el iPad es usado más para 4 grandes cateorías: juegos, notas, ocio y algunos productividad tendremos éstas:
