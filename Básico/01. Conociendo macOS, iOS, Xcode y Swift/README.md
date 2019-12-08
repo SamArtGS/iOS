@@ -181,24 +181,24 @@ Solo basta abrir la tienda de aplicaciones en su dispositivo para ver las tenden
 #### iPhone
 Las aplicaciones más populares son redes sociales, juegos y servicios como Uber o aplicaciones bancarias como BBVA. Dentro de las aplicaciones hay 2 categorías, las gratis y las de paga.
 
-<img src="images/top2.png" align = "center"  width="300"/>
-<img src="images/top1.png" align = "center"  width="300"/>
+<img src="images/top2.PNG" align = "center"  width="300"/>
+<img src="images/top1.PNG" align = "center"  width="300"/>
 
 
 Y los juegos del momento son:
 
-<img src="images/top4.png" align = "center"  width="300"/>
-<img src="images/top3.png" align = "center"  width="300"/>
+<img src="images/top4.PNG" align = "center"  width="300"/>
+<img src="images/top3.PNG" align = "center"  width="300"/>
 
 #### iPad
 
 Como el iPad es usado más para 4 grandes cateorías: juegos, notas, ocio y algunos productividad tendremos éstas:
 
-<img src="images/top5.png" align = "center"  width="600"/>
+<img src="images/top5.PNG" align = "center"  width="600"/>
 
 Y los juegos (que la mayoría son los que los padres descargan para niños):
 
-<img src="images/top6.png" align = "center"  width="600"/>
+<img src="images/top6.PNG" align = "center"  width="600"/>
 
 **Fuera de eso, no les recomendaría desarrollar a menos que tengan un buen motivo.😕**
 
