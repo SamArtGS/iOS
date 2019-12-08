@@ -174,3 +174,42 @@ Esto ya que éstos 4 dispositivos cuentan con sistemas operativos distintos. Son
 **Cabe destacar que por ello es la fiebre Apple, todos los dispositivos interactúan entre sí de una manera muy transparente. Las llamadas que llegan a tu teléfono también llegan a tu Mac o iPad o iPod, tus archivos siempre se encuentran en todos los dispositivos y mucho más, parece como si un dispositivo fuera la extensión del otro.**
 
 ### Tendencias
+
+Solo basta abrir la tienda de aplicaciones en su dispositivo para ver las tendencias. Dentro de la App Store encontraremos una nueva sección especializada en juegos ya que reporte de ingresos muestran que **41% de ingresos de desarrollo de Apps vienen de los juegos**.
+
+
+#### iPhone
+Las aplicaciones más populares son redes sociales, juegos y servicios como Uber o aplicaciones bancarias como BBVA. Dentro de las aplicaciones hay 2 categorías, las gratis y las de paga.
+
+<img src="images/top2.png" align = "center"  width="300"/>
+<img src="images/top1.png" align = "center"  width="300"/>
+
+
+Y los juegos del momento son:
+
+<img src="images/top4.png" align = "center"  width="300"/>
+<img src="images/top3.png" align = "center"  width="300"/>
+
+#### iPad
+
+Como el iPad es usado más para 4 grandes cateorías: juegos, notas, ocio y algunos productividad tendremos éstas:
+
+<img src="images/top5.png" align = "center"  width="600"/>
+
+Y los juegos (que la mayoría son los que los padres descargan para niños):
+
+<img src="images/top6.png" align = "center"  width="600"/>
+
+**Fuera de eso, no les recomendaría desarrollar a menos que tengan un buen motivo.😕**
+
+## Recomendaciones para crear sus apps
+
+Como se había dicho al principio, Apple es muy selectiva con sus aplicaciones ya que busca mejorar en la medida de los posible la experiencia de usuario, por lo que tendremos que cuidar mucho el diseño de la misma, que sea intuitiva de usar y que tenga los elementos suficientes, que todos los botones o elementos tengan un motivo (que no haya botones que los presiones y no haga nada por ejemplo), usar todo el tamaño de la pantalla, etc.
+
+También si agregamos algunos de los servicios que brinda Apple como hacer Siri compatible con nuestra app suman puntos, o que tenga la función de continuidad, que al pasar de dispositivo puedas continuar tu trabajo igual, puntos extra.
+
+**Si desarrollas una app con todas las herramientas que Apple ofrece para los desarrolladores, para explotar las funcionalidades del dispositivo al máximo podrías recibir ayuda con la propaganda en la App Store e incluso ganar uno de los premios llamado: Apple Design Awards que premia a las mejores Apps con muchos premios y publicidad gratis.**
+
+Entre los premios está un bonche de productos Apple tope de gama como iMac, Macbook Pro, iPhone, iPad, Apple Watch y más en sus versiones más equipadas y más costosas.
+
+![](images/best.jpg)
