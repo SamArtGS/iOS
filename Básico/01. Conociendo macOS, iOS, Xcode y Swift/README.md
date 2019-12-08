@@ -1,3 +1,7 @@
+<p>
+  <img src="images/scr7.png" align = "right"  width="40" />
+</p>
+
 # Introducción al desarrollo en iOS
 No es raro ver teléfonos o productos de la manzana mordida en las calles, empresas y en casas. Por muchos años se ha mantenido como una de las principales competencias de Google, Microsoft, Huawei y Samsung.
 
@@ -9,10 +13,6 @@ Apple se focaliza más en la experiencia de usuario, tanto en hardware como en s
 </p>
 
 ## El sistema operativo iOS
-
-
-
-
 
 
 iOS es un sistema operativo móvil que se utiliza para los disposivos iPhone y iPod. Recientemente iPad cambió de poseer el sistema iOS a tener una versión distinta llamada iPadOS, con características específicas para sacar partido a un iPad. 
@@ -59,7 +59,10 @@ Desde la primera versión de iOS, utiliza algo llamado XNU (X is Not Unix). Es l
 
 [Open Source Apple](https://opensource.apple.com)
 
+<p>
+  <img src="images/scr6.png" align = "right"  width="40" />
 
+</p>
 ## El sistema operativo macOS
 
 De la misma manera otro sistema operativo que estaremos usando en el curso será macOS, recientemente renombrado de OS X. Actualmente nos encontramos en macOS 10.15 que lleva por sobrenombre Catalina, que hace referencia a la isla californiana Catalina.
@@ -127,7 +130,6 @@ Por lo primero que debe saltar a tu vista es que en el teclado Mac hay una tecla
 - **cmd ⌘** + algo indica que ejecutarás una acción, ejemplo: cmd + c = copiar
 - **alt** + algo indica que insertarás el caracter a la derecha del la tecla que vayas a presionar, ejemplo: cmd + 2 = @
 - **shift** + algo indica que podrás mayúsculas o si presionas un número pondrá el símbolo en la parte superior de la tecla, ejemplo: shift + a = A, shift + 5 = %
-- ****
 
 ### Kernel - Basado en Unix
 XNU es un núcleo o kernel desarrollado originalmente por NeXT e implementado por Apple Inc. en 1996 en su sistema operativo macOS. XNU es el acrónimo de "X is Not Unix". Fue liberado como software libre y de código abierto como parte del sistema operativo Darwin. Lo que quiere decir que si eres usuario de alguna distribución de GNU/Linux te sentirás familiar con el sistema, además que la terminal para términos prácticos y profesionales te permitirá tener una transparencia con Linux. Es como tener ambos mundos: GNU/Linux y software privativo desarrollado para Mac (dmg).
@@ -152,7 +154,10 @@ Para poder instalar homebrew necesitarás colocar ésto en tu terminal. Lo usare
 MacBook-Pro-de-Sam:~$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+<p>
+  <img src="images/scr8.png" align = "right"  width="40" />
 
+</p>
 ## App Store (iOS y iPadOS) y Mac App Store
 
 Sonará redundante pero sí, las tiendas de aplicaciones para dispositivos móviles tales como iPad, iPhone, iPod, Apple Watch están separadas de las tiendas para Mac y no tan notorio pero es diferente desarrollar para las 4 categorías:
