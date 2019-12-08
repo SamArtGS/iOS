@@ -2,7 +2,7 @@
 
 
 <p>
-  <img src="proteco.png" align = "right"  width="110" height="90"/>
+  <img src="images/proteco.png" align = "right"  width="110" height="90"/>
 </p>
 
 # Programación de Apps en iOS con Swift 
@@ -12,7 +12,7 @@
 
 En los últimos años iOS (recientemente integrando igual a iPadOS) tan tomado demasiado auge en el mundo móvil, ya sea por la estrategia de marketing que sigue Apple para sus consumidores, la experiencia de usuario que ofrece el sistema operativo o hasta razones nacionalistas, iPhone y iPad tienen un gran segmento en el mercado internacional.
 
-![](cs1.png)
+![](images/cs1.png)
 
 Apple reconoce que sus productos no serían tan exitosos sin el mundo de desarrolladores que han creado diversas aplicaciones, que han llevado a otro nivel a la produtividad, el ocio o la socialización. 
 
@@ -22,7 +22,7 @@ En mercados americanos y canadienses iOS se levanta como el sistema operativo qu
 
 Además sus ordenadores por contener un kernel tipo Unix permite tener lo mejor del mundo Linux junto con software privativo como los Adobe (Photoshop) o Autodesk(Autocad).
 
-![](Screen2.png)
+![](images/Screen2.png)
 
 ## Características del curso
 
@@ -50,7 +50,7 @@ Temas importantes:
 -  Introducción a proyecto Catalyst (de iPad a Mac)
 -  ¿Cómo publicar tu app en la App Store y recomendaciones?
 
-![](scr1.png)
+![](images/scr1.png)
 
 
 
