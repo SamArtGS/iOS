@@ -105,7 +105,7 @@ let unArreglodeBooleanos:[Bool] = [true,false,true,true,false]
 
 var arregloDeString: Array<String> = ["Samuel","Jorge","Giovanni","Derek","Francisco","Ricardo","Rodrigo","Alfonso"]
 
-//Para definir sets haremos un nuevo tipo de dato lamado Set()
+//Para definir sets haremos un "tipo de dato" lamado Set()
 
 
 var generosFavoritos: Set = ["Rock", "Clásica", "Hip hop"]
