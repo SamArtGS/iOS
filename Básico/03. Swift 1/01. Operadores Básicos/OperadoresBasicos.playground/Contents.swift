@@ -1,4 +1,3 @@
-
 /*:
 # Operaciones básicas en Swift
  
@@ -8,22 +7,17 @@
 
 // <- Con doble barra hacemos comentarios en el texto
 
-
 // Para declarar constantes y variables:
-
 let miConstante = "Hola soy un texto constante"
 
 var miVariable = "Hola soy un texto variable"
 
 // Para imprimir mi texto:
-
 print(miConstante)
 print(miVariable)
 
 // Diferencia: Uno puede cambiar más adelante y otro no, var cambia, let no.
-
 // Una declaración implícita y una explícita
-
 //Implícita, Swift infiere el tipo de dato
 var numero1 = 9
 
@@ -32,10 +26,8 @@ var numero2:Int = 10
 
 //Es recomendable hacer declaraciones de variables explícitas para no hacer trabajar de más al compilador
 
-
 /*:
 ## Tipos de datos
-
  Tendremos diferentes tipos de datos como:
  
  Int - Enteros
@@ -60,7 +52,6 @@ let unBooleano:Bool = true
 let unCaracter:Character = "F"
 
 // Operaciones matemáticas
-
 let numeroPrimero:Int = 1
 let numeroSegundo:Int = 2
 
@@ -74,7 +65,6 @@ print(numero1+numero2)
 
 
 //Requerimos de una biblioteca para potencia, raíz cuadrada, valor absoluto y max, min.
-
 import Foundation
 
 pow(10,2)
@@ -102,11 +92,9 @@ let unArreglodeFloats:[Float] = [3.1,3.2,3.3,3.4]
 let unArreglodeBooleanos:[Bool] = [true,false,true,true,false]
 
 //Otras formas de declarar una arreglo
-
 var arregloDeString: Array<String> = ["Samuel","Jorge","Giovanni","Derek","Francisco","Ricardo","Rodrigo","Alfonso"]
 
 //Para definir sets haremos un "tipo de dato" lamado Set()
-
 
 var generosFavoritos: Set = ["Rock", "Clásica", "Hip hop"]
 
@@ -115,11 +103,9 @@ print("Mis géneros de música favoritos son \(generosFavoritos.count).")
 //Para definir diccionaroios utilizaremos la siguiente sintaxis:
 //Imaginemos que tenemos un registro de alumnos por número de lista
 
-
 let diccionario:[Int:String] = [1:"Samuel",2:"Jorge",3:"Giovanni",4:"Derek",5:"Francisco",6:"Ricardo",7:"Rodrigo",8:"Alfonso"]
 
 //Si quiero saber la persona de la lista número 3 basta con la siguiente expresión
-
 print(diccionario[3]!)
 
 //Para poder imprimir todos los valores o todas las llaves usaremos las siguientes instrucciones
@@ -127,6 +113,4 @@ print(diccionario.keys)
 print(diccionario.values)
 
 
-//Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Opcionals
-
-
+//Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Optionals
