@@ -147,7 +147,6 @@ print(diccionario.keys) //imprime en un arreglo todas las llaves (los números d
 print(diccionario.values) //imprime en un arreglo todos los valores disponibles en el diccionario, o sea los nombres de los alumnos.
 ```
 
-**Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Optionals**
+**Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Opcionals**
 
 
-![](scr1.png)

@@ -1,152 +1,385 @@
 
-
-# Operaciones básicas en Swift 🐥
+# Estructuras de control: Condicionales y Ciclos 🦆
  
- **Primero antes que nada, recuerda que todo se trata de aprender así que si algo no me di a entender puedes mandarme un correo. 🐶**
+**Escrito por: Samuel Arturo Garrido Sánchez**
+
+<p>
+  <img src="images/src1.png" align = "right"  width="120" />
+</p>
+
+
+Las estructuras de control son elementos presentes en muchos lenguajes de programación y swift no es la excepción. Desde que aprendes If/else, switch case, for, while, etc, en otros lenguajes como Java, solamente podrás encontrar equivalentes en otros lenguajes. Nos permiten controlar el flujo de ejecuciones dentro de nuestro código para que se ejecute lo que queramos, en el momento que le indiquemos.
  
  
-Primero antes que nada, como concepto primordial en Swift es que existen 2 tipos de datos: los constantes **let** y las variables **var**. Si declaramos una variable como tipo let, no podremos cambiar su valor más adelante, contrario de var que podremos cambiar el valor de la variable cuantas veces necesitemos.
+## Condicionales 🤷‍♂️
 
-Para imprimir valores como en los otros lenguajes de programación usaremos la siguiente función: **print(loQueQueramosImprimir).**
-
-
-```swift
-// <- Con doble barra hacemos comentarios en el texto
-
-let holaMundo = "Hola mundo!" //Para que no caiga la maldición
-
-let miConstante = "Hola soy un texto constante"
-
-var miVariable = "Hola soy un texto variable"
-print(holaMundo)
-print(miConstante)
-print(miVariable)
-```
-Primero, Swift contiene algo llamado inferencia de dato, que nos permite colocar una variable seguido de lo que contenga sin necesidad de decirle que es un entero, una cadena o un booleano. A esto lo llamamos declaración implícita.
-
-Podemos igual hacer declaraciones explícitas, poniendo dos puntos seguido del tipo de dato. Es recomendable hacer esto para ahorrarle trabajo a la computadora a la hora de compilar el código.
-
-```swift
-//Implícita, Swift infiere el tipo de dato
-var numero1 = 9
-
-//Explícita, tu defines el tipo de dato
-var numero2:Int = 10
-
-
-```
-
-
-## Tipos de datos 🦁
-
- Tendremos diferentes tipos de datos como:
+Los condicionales son elementos que nos permiten decir una pregunta con opción a verdadero/falso en cada pregunta, y realizando una serie de acciones en cada condición.
  
-- **Int** - Enteros
-- **Float** - Decimales no tan precisos, menos gasto de memoria
-- **Double** - Decimales muy precisos, más gasto de memoria
-- **String** - Cadenas de texto
-- **Bool** - Booleano, solo puede tener valores true o false, 0 o 1
-- **Character** - Un caracter
+
+Un condicional if básico se declara como:
+
+
+```swift
+let numero:Int = 1
+
+if numero<3{
+    print("El número es menor a 3")
+}else{
+    print("El número es mayor o igual a 3")
+}
+```
+
+Donde la acción corresponde a una comparación, si cumple la condición realizará la acción contenida dentro del if, en caso contrario realizará otra u otras acciones
+
+
+### OPERADORES LÓGICOS 🦉
+
+Los operadores lógicos en Swift correspoden a:
+
+**Para poder colocar los condicionales siguientes lo haremos mediante la siguiente nomenclatura:**
  
-```swift
-let unEntero:Int = 1
-let unFlotante:Float = 3.1416
-let unDouble:Float = 3.14159265358979323846264338327950288419716939
-let unString:String = "Te pago el Uber"
-let unBooleano:Bool = true
-let unCaracter:Character = "F"
+ **NOT :    !a**
+ 
+ **AND :  a && b**
+ 
+ **OR  :  a || b**
+ 
 
-// Operaciones matemáticas
 
-let numeroPrimero:Int = 1
-let numeroSegundo:Int = 2
-
-print(numero1+numero2)
-
-5+10
-10-5
-4*10
-5/2
-
-```
-
-Para obtener la potencia y la raíz cuadrada de un número, tendremos que importar una biblioteca (veremos más adelante qué es) para poder usar éstas funciones (que igual veremos más adelante).
+#### EJEMPLO NOT 😒
+Entra a la condición si es falso el falso, o sea verdadero. Podemos realizar un ejemplo con un acceso a un sistema.
 
 
 ```swift
-//Importamos la biblioteca de Foundation
-import Foundation
+let accesoEntrada: Bool = false
 
-pow(10,2) // Función para potencia de un número
-sqrt(90) // Función para la raíz de un número
-
-abs(-9) // Función para obtener el valor absoluto de un número
-
-max(10,20,500,180,4,78) // Obtener el mayor de los números
-min(124,62,73,5,123,9) // Obtener el menor de los números
-
+if !accesoEntrada{
+    print("ACCESO DENEGADO")
+}else{
+    print("ACCESO CORRECTO")
+}
 ```
 
 
-## Arreglos, Sets y Diccionarios 🦊
+#### EJEMPLO AND 🌱
 
-Los arreglos son un conjunto de elementos del mismo tipo, son muy utilizados para almacenar datos en nuestro código. Tienen un orden y pueden haber datos repetidos.
+Entra a la condición si ambas condiciones son verdaderas, en caso que una o las 2 sean falsas no realizará las acciones dentro del if
 
-Los sets son un conjunto de elementos del cuál contendrá un orden, solo que no permitirá valores repetidos.
+```swift 
+let codigoPuertaCorrecto = true
+let huellaDactilarAceptada = true
 
-Un diccionario es un conjunto de elementos que hacen referencia a otros, tienen un elemento y una llave, podemos acceder a esos elementos a través de la llave.
+if codigoPuertaCorrecto && huellaDactilarAceptada{
+    print("Bienvenido al sistema bancario")
+}else{
+    print("SEGURIDAD! 👮‍♂️")
+}
+```
 
 
-Para definir a un arreglo, al tipo de dato lo encerramos entre corchetes []. Si queremos un arreglo de 2 dimensiones o sea una matriz será por ejemplo: [[Int]].
+Puede llenarse de condiciones y hasta el momento que TODAS sean verdaderas, realizará el conjunto de acciones contenidas en el condicional.
 
 ```swift
-let unArreglodeNumeros:[Int] = [1,2,3,4]
-let unaMatriz:[[Int]] = [[1,2],[3,4]]
-
-
-let unArreglodeStrings:[String] = ["Samuel","Jorge","Giovanni","Derek","Francisco","Ricardo","Rodrigo","Alfonso"]
-let unArreglodeFloats:[Float] = [3.1,3.2,3.3,3.4]
-let unArreglodeBooleanos:[Bool] = [true,false,true,true,false]
-
-
-
-//Otras formas de declarar una arreglo
-
-var arregloDeString: Array<String> = ["Samuel","Jorge","Giovanni","Derek","Francisco","Ricardo","Rodrigo","Alfonso"]
+if codigoPuertaCorrecto && huellaDactilarAceptada && 5<10 && 10==10{
+    print("Todas las condiciones se cumplieron")
+}else{
+    print("Alguna de las condiciones no se cumplió")
+}
 
 ```
 
 
-Para definir sets lo siguiente, escribiremos Set como "tipo de dato".
+#### Ejemplo OR 🍀
+
+Entra a la condición si ALGUNO de los elementos es verdadero. Con que uno se cumpla entrará a la condición.
 
 ```swift
-var generosFavoritos: Set = ["Rock", "Clásica", "Hip hop"]
-print("Mis géneros de música favoritos son \(generosFavoritos.count).")
+let invitacionInvitado = true
+let invitacionAcompañante = false
 
-```
-
-Para definir diccionaroios utilizaremos la siguiente sintaxis:
-
-Imaginemos que tenemos un registro de alumnos por número de lista
-
-```swift
-let diccionario:[Int:String] = [1:"Samuel",2:"Jorge",3:"Giovanni",4:"Derek",5:"Francisco",6:"Ricardo",7:"Rodrigo",8:"Alfonso"]
-```
-
-Si quiero saber la persona de la lista número 3 basta con la siguiente expresión
-
-```swift
-print(diccionario[3]!)
+if invitacionInvitado || invitacionAcompañante {
+    print("Pueden pasar a la peda")
+}else{
+    print("Nel pastel")
+}
 ```
 
 
-Para poder imprimir todos los valores o todas las llaves usaremos las siguientes instrucciones
+Sí, se pueden combiar éstos, para ello necesitamos paréntesis como en las operaciones matemáticas: 6\*5+(1*(7+5)) = 42 **¿Qué haces primero?**
+
 
 ```swift
-print(diccionario.keys) //imprime en un arreglo todas las llaves (los números de lista).
-print(diccionario.values) //imprime en un arreglo todos los valores disponibles en el diccionario, o sea los nombres de los alumnos.
+let tengoLlave:Bool = true
+
+if (codigoPuertaCorrecto && huellaDactilarAceptada) || tengoLlave {
+    print("Puedo entrar a mi casa")
+}else{
+    print("No puedo entrar a mi casa")
+}
 ```
 
-**Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Opcionals**
 
 
+### Switch case: ⭐️
+Switch case es una versión mejorada de un condicional normal, es un condicional múltiple que va checando las posibilidades que se le establezcan y para cada posible condición podemos realizar diversas funciones.
+
+```swift
+let unNumero:Int = 10
+
+switch unNumero {
+    case 1:
+        print("Tenemos un número 1")
+    case 2:
+        print("Tenemos un número 2")
+    case 10:
+        print("Tenemos un número 10")
+    default:
+        print("Ninguno de los casos")
+}
+```
+
+Nótese los que han tenido otro lenguaje de programación en sus manos, no tenemos un break al final de los elementos, permitiendo así un código más seguro porque switch detendrá la búsqueda de elementos cuando tenga la primer coincidencia.
+
+En caso que queramos una sitaxis tipo C o java donde queremos múltiples casos sean matcheados en el mismo switch case, existe una palabra: **fallthrough** que nos permite mantenernos en el switch sin hacer el break.
+
+```swift
+
+let describirEntero = 5
+
+var descripcionDeEntero = "El número \(describirEntero) es " 
+
+switch describirEntero{
+	case 2,3,5,7,11,13,17,19:
+		descripcionDeEntero += "un número primo"
+		fallthrough
+	default:
+		descripcionDeEntero += "un entero."
+}
+```
+
+
+Puede ser usado también para capturar letras:
+
+```swift
+let caracter: Character = "a"
+
+switch caracter {
+case "a","A":
+    print("Tenemos una a (puede ser mayúscula, contempla ambos casos)")
+default:
+    print("No sabemos qué tenemos")
+}
+```
+
+
+Podemos agregar contadores o rangos también a nuestro switch case:
+
+```swift
+let nosFaltan = 143
+let cantidad:String
+
+switch nosFaltan {
+case 0:
+    cantidad = "ningún"
+case 1..<5:
+    cantidad = "muy pocos"
+    
+case 5...12:
+    cantidad = "pocos"
+case 13...40:
+    cantidad = "algunos"
+case 40...50:
+    cantidad = "considerables"
+case 50...100:
+    cantidad = "chiorro"
+case _ where nosFaltan > 100:
+    cantidad = "(inserte su grosería mexicana favorita)"
+default:
+    cantidad = ", no sé cuántos "
+}
+print("Nos faltan \(cantidad) lugares")
+```
+
+
+## CICLOS 🌀
+
+Los ciclos son elementos que nos permiten repetir ciertas acciones hasta que la condición que se le establezca se cumpla. Nos permite, entre otras cosas, recorrer un arreglo, cargar imágenes y más adelante cargar elementos a una tabla como de mensajes de WhatsApp.
+ 
+Podemos encontrar ciclos **for, while y repeat while**
+ 
+ 
+### FOR
+ 
+ Nos permitirá repetir una acción dadas las condiciones que le indiquemos.
+
+Un ciclo for puede ser usado con los siguientes casos:
+
+
+- Si damos un rango de un índice desde dónde comienza hasta dónde termina, realizará una cuenta de 1 en 1 hasta llegar al límite.
+
+```swift
+var tarea1: Int = 2
+var tarea2: Int = 3
+var tarea3: Int = 4
+var tarea4: Int = 5
+
+for indice in 1...10{
+    print("\(indice) ")
+    tarea1 += indice
+    tarea2 -= indice
+    tarea3 *= indice
+    tarea4 /= indice
+}
+
+print("Averigua por qué tarea1 es \(tarea1).")
+print("Averigua por qué tarea2 es \(tarea2).")
+print("Averigua por qué tarea3 es \(tarea3).")
+print("Averigua por qué tarea4 es \(tarea4).")
+```
+
+**❗️❗️NÓTESE QUE HE DEJADO UNA TAREA AQUÍ, POR FAVOR REALÍCELA PARA COMPLEMENTAR SU APRENDIZAJE ❗️❗️**
+
+VEN EL **\ (indice)** ? 
+
+Eso se le dice **concatenar** y nos referimos a poder unir elementos de varios tipos, en este caso índice son de tipo entero a imprimirlos como String, podemos igual realizarlo con varios tipos de elementos, colocando el nobre de la variable entre paréntesis y antecedido por una antidiagonal:     **\ (variable)**
+
+
+#### Operador de rango medio abierto.
+
+Define un rango que corre de "a" a "b" pero no incluye a "b". O sea no incluímos a 10
+
+```swift
+print("\n Operador de rango medio: ")
+
+for rangoMedio in 0..<10{
+    print(" \(rangoMedio) ")
+}
+```
+
+
+#### Rangos de un lado
+
+Puedes recorrer un arreglo en un ciclo for dando un rango, en este caso names contiene 3 elementos, el 0, el 1 y el 2, y solo queremos los elementos 1 y 2.
+
+
+```swift
+let names:[String] = ["Samuel","Jorge","Rodrigo","Ricardo","Giovanni","Alfonso","Derek"]
+
+print("\n De lado izquierdo: \n")
+for nombre in names[1...]{
+    print(nombre)
+}
+
+print("\n De lado derecho: \n")
+for nombre in names[...4]{
+    print(nombre)
+}
+
+print("\n De ambos lados: \n")
+for nombre in names[1...4]{
+    print(nombre)
+}
+```
+
+Impresión de diccionarios mediante FOR: Podemos imprimir el contenido de un diccionario con su llave mediante el siguiente ciclo for:
+
+
+```swift
+let animalesyNumPatas = ["araña":8,"hormiga":6,"gato":4,"cienpiés":100,"babosa":0]
+
+for (nombreAnimal,numeroPatas) in animalesyNumPatas{
+    print("El o La \(nombreAnimal) tiene \(numeroPatas) patas")
+}
+```
+
+Si solamente necesitamos recorrer y la variable no nos es útil, podemos omitirla con un guión bajo: _
+
+```swift
+var base = 2
+var potencia = 5
+var respuesta = 1
+
+for _ in 1...potencia{
+    respuesta *= base
+}
+```
+
+
+Si queremos determinar de cuánto en cuánto vaya recorriendo, además de los límites, tendremos que utilizar la sentencia completa:
+
+```swift
+let inicio = 1
+let fin = 10
+
+for contador in stride(from: inicio, to: fin, by: 2){
+    print(contador) // 1 3 5 7 9
+}
+```
+
+En este paso definimos el inicio que es 1, sumará 2 e imprimirá el siguiente valor hasta que llegue a fin, 10. No se pasará del rango por lo que 11 no lo imprimirá al sumar a 9 + 2 = 11
+
+
+### WHILE
+
+Nos permite repetir una serie de comandos hasta que la condición colocada en el while sea falsa.
+
+La estructura general de un while es:
+
+```swift
+var contador = 10
+while contador>0{
+    print(contador)
+    contador-=1
+}
+```
+
+Las mismas opciones que teníamos anteriormente como compuertas lógicas AND, NOT y OR aplican:
+
+```swift
+contador = 10
+while huellaDactilarAceptada &&  contador>0{
+    print("Huella aceptada en \(contador)")
+    contador-=1
+}
+```
+
+### REPEAT WHILE
+La diferencia que salta a la vista del repeat while es que **la función a repetir al menos se ejecuta una vez**. Al contrario de while donde si no cumple la condición, ni entraría a repetir el conjunto de instrucciones. Simulemos pasar de nivel en un videojuego.
+
+```swift
+var nivelActual:Int = 0, nivelFinal:Int = 5
+
+let nivelCompletado = true //Si el nivel está completado, pasado.
+
+repeat {
+    if gameCompleted {
+        print("Has pasado el nivel \(currentLevel)")
+        currentLevel += 1
+    }
+} while (currentLevel <= finalLevel)
+
+print("Has terminado el videojuego")
+
+```
+Al menos una vez repetirá el conjunto de instrucciones dentro de repeat.
+
+### TAREA:
+
+<p>
+  <img src="images/scr2.png" align = "right"  width="200" />
+</p>
+Con ayuda dentro del capítulo de **Control Flow** en el libro: "The Swift Programming Language", crear un algoritmo que, dada una coordenada (1,1), por ejemplo, determinar si está contenida dentro del cuadro central de -2 a 2 tanto en x como en y, si está en el origen o en alguno de los ejes.
+
+*Puedes tomar ayuda de ésto, pero no te lo recomiendo, ya que no practicarás tu lógica computacional y eso no solo se aplica en Swift, sino en todo. Si tienes buena lógica, lo demás es pan comido.*
+
+```swift
+let unPunto = (1,1)
+
+switch unPunto{
+	case (0,_):
+		print("\(unPunto) está en el eje de las y")
+	default:
+		print("El punto \(unPunto) está fuera de del cuadrado")
+}
+
+```
