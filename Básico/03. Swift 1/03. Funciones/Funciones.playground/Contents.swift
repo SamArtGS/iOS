@@ -143,7 +143,7 @@ print("Valor mínimo: \(valoresMinMax.minimo)")
 print("Valor mínimo: \(valoresMinMax.maximo)")
 
 
-//Para finalizar: cada vez que queremos utilizar una función, tenemos que colocar sus parámetros si contiene pero delante de éstos tiene como el dato que alojará, ejemplo:
+//Cada vez que queremos utilizar una función, tenemos que colocar sus parámetros si contiene pero delante de éstos tiene como el dato que alojará, ejemplo:
 
 // funcion(nombre:"Samuel")
 
@@ -168,3 +168,26 @@ print(saludoSam)
 
 
 
+//INOUT PARAMETERS
+
+//Los parámetros de una función son constantes por defecto. Si queremos cambiar estos valores dentro de la ejecución nos resultará en un error en tiempo de ejecución. Para resolver esto y en una función por ejemplo intercambiar el valor de a en el código original por el valor de b:
+
+
+func intercambiar2Enteros(_ a: inout Int, _ b: inout Int){
+    let aux = a
+    a = b
+    b = aux
+}
+
+var entero1:Int = 3
+var entero2:Int = 100
+
+print(entero1)
+print(entero2)
+
+intercambiar2Enteros(&entero1, &entero2)
+
+print(entero1)
+print(entero2)
+
+//Para que podamos intercabiar los valores de éstas 2 variables en Swift necesitaremos agregar la palabra reservada inout después de la definición de la variable y cuando queramos insertar valores dentro de la función necesitaremos agregar un símbolo & para poder ser usado. Para los curiosos a esto le llamamos paso por valor y paso por referencia.
