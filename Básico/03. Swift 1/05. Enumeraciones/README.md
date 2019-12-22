@@ -46,7 +46,7 @@ switch direccionTomada {
 }
 ```
 
-##Enumeraciones, más sencillo: 🦌
+## Enumeraciones, más sencillo: 🦌
 
 Ni siquiera tenemos que ir case por case, solo separarlo por comas.
 
@@ -129,7 +129,7 @@ switch bebidaElegidaArreglo {
 ```
 Ahora pongamos un ejemplo más complicado donde un arreglo no podrá sernos de gran utilidad.
 
-##Lectura de un código de barras o un código QR. 🐘
+## Lectura de un código de barras o un código QR. 🐘
 
 Para nuestro ejemplo UPC es el código de barras que todos vemos en los productos del súper donde cada una de las barras significa un número del 1 al 9. Cada código de barras tiene un dígito del sistema, seguido por 5 números de código de manufactura, seguido por 5 códigos del producto y terminando con un número de verificación de que ha sido leído correctamente el código de barras.
 
