@@ -1,6 +1,6 @@
 /*:
-# Operaciones básicas en Swift
- 
+# Operaciones básicas en Swift 🐕
+ Escrito por: Samuel Arturo Garrido Sánchez
  Primero antes que nada, recuerda que todo se trata de aprender así que si algo no me di a entender puedes mandarme un correo. 😀
  
 */

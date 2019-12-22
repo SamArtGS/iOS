@@ -1,6 +1,7 @@
 
 
 # Operaciones básicas en Swift 🐥
+Escrito por: Samuel Arturo Garrido Sánchez
  
  **Primero antes que nada, recuerda que todo se trata de aprender así que si algo no me di a entender puedes mandarme un correo. 🐶**
  
@@ -149,4 +150,4 @@ print(diccionario.values) //imprime en un arreglo todos los valores disponibles 
 
 **Se han preguntado por qué agregué un signo ! a diccionario[3] !  -> Se verá más adelante en Opcionals**
 
-
+![](scr1.png)
